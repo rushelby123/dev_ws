@@ -10,6 +10,17 @@ RUN usermod -l ${USER_NAME} ubuntu && \
     usermod -aG sudo ${USER_NAME} && \
     echo "$USER_NAME ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/${USER_NAME}
 
+RUN apt-get update && \
+    apt-get dist-upgrade -y && \
+    apt-get install -y \
+    python3 \
+    python3-pip \
+    build-essential \
+    ros-jazzy-ros-gz* \
+    ros-jazzy-twist-mux \
+    ros-jazzy-ros2-control \
+    ros-jazzy-ros2-controllers
+    
 # Switch to normal user
 USER ${USER_NAME}
 
