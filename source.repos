@@ -1,0 +1,6 @@
+repositories:
+  forklift_one:
+    type: git
+    url: https://github.com/rushelby123/forklift_one.git
+    version: main
+   
