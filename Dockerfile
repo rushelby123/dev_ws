@@ -19,7 +19,9 @@ RUN apt-get update && \
     ros-jazzy-ros-gz* \
     ros-jazzy-twist-mux \
     ros-jazzy-ros2-control \
-    ros-jazzy-ros2-controllers
+    ros-jazzy-ros2-controllers \
+    ros-jazzy-gz-ros2-control
+
     
 # Switch to normal user
 USER ${USER_NAME}
