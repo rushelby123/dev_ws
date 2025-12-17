@@ -15,12 +15,7 @@ RUN apt-get update && \
     apt-get install -y \
     python3 \
     python3-pip \
-    build-essential \
-    ros-jazzy-ros-gz* \
-    ros-jazzy-twist-mux \
-    ros-jazzy-ros2-control \
-    ros-jazzy-ros2-controllers \
-    ros-jazzy-gz-ros2-control
+    build-essential 
 
     
 # Switch to normal user
